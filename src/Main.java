@@ -42,18 +42,22 @@ public class Main {
         instalLink(clientOS, clientDeviceYear);
     }
 
-    public static void calculateTheDistance (int deliveryDistance, int deliveryDays) {
-        if (deliveryDistance > 20)
-            deliveryDays++;
-        if (deliveryDistance > 60)
-            deliveryDays++;
-        System.out.println("Потребуется дней: " +deliveryDays);
+    public static int deliveryDays () {
+return 0;
     }
 
     public static void tack3() {
         int deliveryDistance = 40;
-        int deliveryDays = 0;
-         calculateTheDistance (deliveryDistance,deliveryDays);
+        int total = deliveryDays();
+        if (deliveryDistance > 20) {
+            total++;
+        }
+        if (deliveryDistance > 60) {
+            total++;
+        }
+        System.out.println("Потребуется дней: "+ total);
+
+
     }
 
 
